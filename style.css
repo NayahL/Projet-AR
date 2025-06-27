@@ -43,6 +43,7 @@ html, body {
     }
 
     .cta:hover {
-      background-color: #e91e63;
+      background-color: #003F56;
+       border: 2px solid #D4E9EB;
       color: white;
     }
