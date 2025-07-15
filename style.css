@@ -18,6 +18,35 @@ html, body {
       font-family: sans-serif;
     }
 
+.vertical-container {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center; /* centre horizontalement /
+  align-items: center;     / centre verticalement */
+  font-family: sans-serif;
+}
+
+.vertical-scroll {
+  animation: scroll-up 8s linear infinite;
+  text-align: center;
+}
+
+.vertical-scroll p {
+  margin: 0;
+  padding: 10px 0;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
 
     img{
         max-width: 70%;
