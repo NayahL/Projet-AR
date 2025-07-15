@@ -18,24 +18,6 @@ html, body {
       font-family: sans-serif;
     }
 
- .vertical-scroll {
-    height: 100px;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .vertical-scroll p {
-    position: absolute;
-    animation: scroll-up 3s linear infinite;
-  }
-   @keyframes scroll-up {
-    0% {
-      transform: translateY(100%);
-    }
-    100% {
-      transform: translateY(-100%);
-    }: 100%;
-    }
 
     img{
         max-width: 70%;
