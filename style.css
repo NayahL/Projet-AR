@@ -22,7 +22,7 @@ html, body {
 }
 
 .vertical-scroll {
-  animation: scroll-up 15s linear infinite;
+  animation: scroll-up 15s linear forwards;
   text-align: center;
 }
 
@@ -33,7 +33,7 @@ html, body {
 
 @keyframes scroll-up {
   0% {
-    transform: translateY(0%);
+    transform: translateY(100%);
   }
   100% {
     transform: translateY(-162%);
@@ -47,7 +47,18 @@ html, body {
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin-bottom: 20px;
+       animation: delayeimage 40s;
+
     }
+
+    @keyframes delayeimage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
     .cta {
       width: 140px;
@@ -63,7 +74,17 @@ html, body {
       text-decoration: none;
       color: #003F56;
       transition: background-color 0.3s, color 0.3s;
+      animation: delayecta 40s;
     }
+
+       @keyframes delayecta {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
     .cta:hover {
       background-color: #003F56;
